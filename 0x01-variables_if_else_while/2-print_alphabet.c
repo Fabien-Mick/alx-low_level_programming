@@ -5,14 +5,14 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char low;
+	char a;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		putchar('\n');
-
+	for (a = 'a'; a <= 'z'; a++)
+	{
+	putchar(a);
+	}
+	putchar('\n');
 	return (0);
 }
