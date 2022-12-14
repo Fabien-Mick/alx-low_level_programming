@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * print_to_98 - prints natural number
-* @n:an integer
+* @n:an input to start the count
 * Return: Nothing
 */
 void print_to_98(int n)
