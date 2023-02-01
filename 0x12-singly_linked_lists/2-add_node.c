@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * add_node - adds a new node at the beginning of a 
+ * add_node - adds a new node at the beginning of a list
  * @head: pointer to the head of the list
  * @str: string to be added
  * Return: returns the address to the new element
