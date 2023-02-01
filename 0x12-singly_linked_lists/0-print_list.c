@@ -6,14 +6,22 @@
  * @h: List to be printed
  * Return: number of nodes
  */
+
 size_t print_list(const list_t *h)
 {
-	size_t temp;
+	const list_t *temp = h;
+	size_t i = 0;
 
-	for (temp = 0; h; temp++)
+	while (temp != NULL)
 	{
-		printf("[%d] %s\n", h->len, h->str);
-		h = h->next;
+	if (temp->str != NULL)
+	printf("[%d] %s\n", temp->len, temp->str);
+	else
+	printf("[0] (nil)\n");
+	i += 1;
+	temp = temp->next;
 	}
-	return (temp);
+
+	return (i);
 }
+
