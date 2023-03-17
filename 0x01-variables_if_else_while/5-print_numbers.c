@@ -1,12 +1,19 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+  * main - entry point
+  *
+  * Return: Always(0)
+  */
+
 int main(void)
 {
-	printf("0123456789\n");
-	return (0);
+	int i;
+
+	for (i = '0'; i <= '9'; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+return (0);
 }
