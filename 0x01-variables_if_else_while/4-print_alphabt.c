@@ -1,24 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+  * main - entry point
+  *
+  * Return: Always(0)
+  */
 
 int main(void)
 {
-	char low, e, q;
+	int a;
 
-	e = 'e';
-	q = 'q';
-
-	for (low = 'a'; low <= 'z'; low++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		if (low != e && low != q)
-			putchar(low);
+		if (a == 'e' || a == 'q')
+			continue;
+		putchar(a);
 	}
 	putchar('\n');
-
-	return (0);
+return (0);
 }
