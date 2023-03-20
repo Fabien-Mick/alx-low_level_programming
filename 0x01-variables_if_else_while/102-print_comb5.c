@@ -22,6 +22,7 @@ for (i = 0; i < 99; i++)
 		if (i < 99 && j < 100)
 		{
 			putchar(',');
+			putchar(' ');
 		}
 	}
 	}
