@@ -1,4 +1,6 @@
 #include "main.h"
+#include <ctype.h>
+#include <string.h>
 /**
 * cap_string - capitalize all word
 * @str: string to capitalize
@@ -8,16 +10,9 @@ char *cap_string(char *str)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		while (!(str[i] >= 'a' && str[i] <= 'z'))
-		{
-			i++;
-		}
-
-		if (str[i - 1] == ' ' ||
-				str[i - 1] == '\t' ||
-				str[i - 1] == '\n' ||
+		if (i == 0 || isspace(str[i - 1]) ||
 				str[i - 1] == ',' ||
 				str[i - 1] == ';' ||
 				str[i - 1] == '.' ||
@@ -29,9 +24,9 @@ char *cap_string(char *str)
 				str[i - 1] == '{' ||
 				str[i - 1] == '}')
 		{
-			str[i] -= 32;
+			str[i] = toupper(str[i]);
 		}
-		i++;
 	}
+
 	return (str);
 }
