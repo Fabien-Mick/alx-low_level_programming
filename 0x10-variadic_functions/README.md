@@ -1,1 +1,0 @@
-Exercise about variadic functions
