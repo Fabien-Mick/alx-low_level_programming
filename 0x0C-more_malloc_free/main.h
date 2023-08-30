@@ -11,5 +11,6 @@ void print_error_and_exit(void);
 int is_valid_number(char *num);
 int string_length(char *str);
 void multiply(char *num1, char *num2);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 #endif
